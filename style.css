@@ -1,0 +1,194 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+  body{
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-color: hsl(225, 100%, 94%);
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+  #main-div{
+    border: 1px solid black;
+    border-style: none;
+    width:25%;
+    height: 30em;
+    margin: 3em auto;
+    border-radius: 15px;
+  }
+  .bg-image{
+    border-radius: 15px 15px 0px 0px;
+  }
+  #content-div{
+    background-color: white;
+    padding: 2em;
+    text-align: center;
+    border-radius: 0px 0px 15px 15px;
+  }
+  #inside-div{
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    align-items: center;
+    font-size: 0.7em;
+    padding: 0.9em;
+    margin-top: 1.2em;
+    border-radius: 10px;
+  }
+  #icon{
+    border: 1px solid black;
+    border-style: none;
+    border-radius: 50%;
+    padding: 0.7em;
+    background-color:hsl(225, 100%, 94%);
+    color: hsl(224, 23%, 55%);
+    font-size: 0.8em;
+    
+  }
+  .annual-div{
+   margin-left: 1em;
+    font-weight: bold;
+  }
+  .plan{
+    color: hsl(224, 23%, 55%) ;
+  }
+  .link-div{
+    margin-left: 7em;
+    font-weight: bold;
+    text-decoration:underline;
+    color: hsl(245, 75%, 52%);
+  }
+
+  .summary{
+    font-weight: bold;
+  }
+  .para{
+    font-size: 0.8em;
+    color:  hsl(224, 23%, 55%);
+    margin-top: 0.8em;
+  }
+  .button{
+    font-size: 0.7em;
+    font-weight: bold;
+    color: white;
+    background-color: hsl(245, 75%, 52%) ;
+    padding: 0.8em;
+    width: 100%;
+    margin-top: 1em;
+    border-radius: 10px;
+    border-style: none;
+  }
+  .button:hover{
+    box-shadow: 0px 10px 10px 0px  hsl(224, 23%, 55%);
+  }
+  .order-cancel{
+    font-size: 0.8em;
+    font-weight: bold;
+    color:  hsl(224, 23%, 55%);
+    margin-top: 0.8em;
+  }
+  @media screen and (max-width:431px){
+    #main-div{
+      width: 90%;
+      height: auto;
+      margin: 5em auto;
+    }
+    .link-div{
+      margin-left:50px ;
+    }
+    #icon{
+      font-size: 1.2em;
+    }
+    .summary{
+      font-size: 1.2em;
+    }
+    .para{
+      font-size: 1em;
+      font-weight: 500;
+    }
+    #inside-div{
+      padding: 1em;
+      font-size: 0.9em;
+    }
+    .button{
+      font-size: 0.9em;
+    }
+    .order-cancel{
+      font-size: 1em;
+    }
+  }
+
+  @media screen and (max-width:375px){
+    #main-div{
+      width: 90%;
+      height: auto;
+      margin: 5em auto;
+    }
+    .link-div{
+      margin-left:50px ;
+    }
+    #icon{
+      font-size: 1.2em;
+    }
+    .summary{
+      font-size: 1.2em;
+    }
+    .para{
+      font-size: 1em;
+      font-weight: 500;
+    }
+    #inside-div{
+      padding: 1em;
+      font-size: 0.9em;
+    }
+    .button{
+      font-size: 0.9em;
+    }
+    .order-cancel{
+      font-size: 1em;
+    }
+  }
